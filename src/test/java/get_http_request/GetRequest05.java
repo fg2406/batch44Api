@@ -37,7 +37,8 @@ public class GetRequest05 {
         response.
                 then().
                 contentType(ContentType.JSON).      //bunun yerine "application/json”  yazilabilir
-                statusCode(200).header("Server", Matchers.equalTo("cloudflare"))
+                statusCode(200).headers("Server", Matchers.equalTo("cloudflare")
+                ,"Pragma","no-cache")
                 .body("userId",Matchers.equalTo(7)
                         ,"title",Matchers.equalTo("esse et quis iste est earum aut impedit")
                         ,"completed",Matchers.equalTo(false));
