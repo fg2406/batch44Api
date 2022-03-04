@@ -30,7 +30,9 @@ public class GetReqpuesrtMatcherClass06 {
 
         response.then().body("firstname", Matchers.equalTo("Susan")
         ,"totelprice",Matchers.equalTo(958)
-        ,"bookingdates-checkin",Matchers.equalTo("2018-12-06"));
+        ,"bookingdates.checkin",Matchers.equalTo("2018-12-06"));    //bady icinde bazen bady oluyor,bady icine . ile giriliyor
+
+
 
     }
 

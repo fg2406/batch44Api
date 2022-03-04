@@ -8,7 +8,7 @@ public class DummyBaseUrl {
 
 
 
-    public RequestSpecification spec02;
+    protected RequestSpecification spec02;
 
     @Before
     public void setUp(){
