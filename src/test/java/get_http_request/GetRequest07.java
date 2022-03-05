@@ -3,7 +3,6 @@ package get_http_request;
 import base_url.RegresinBaseUrl;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
@@ -21,7 +20,7 @@ public class GetRequest07 extends RegresinBaseUrl {
         @Test
         public void test07(){
 
-            spec01.pathParams("parametre1", "api" , "parametre2", "users");
+            spec01.pathParams("parametre1", "restApi", "parametre2", "users");
 
             //  https://reqres.in
             Response response = given().spec(spec01).when().get("/{parametre1}/{parametre2}");

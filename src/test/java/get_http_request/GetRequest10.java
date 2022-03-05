@@ -30,7 +30,7 @@ public class GetRequest10 extends DummyBaseUrl {
     @Test
     public void test10(){
 
-        spec02.pathParams("first", "api", "second", "v1", "third", "employees");
+        spec02.pathParams("first", "restApi", "second", "v1", "third", "employees");
 
         // http://dummy.restapiexample.com
         Response response = given().spec(spec02).when().get("/{first}/{second}/{third}");

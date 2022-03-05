@@ -11,7 +11,7 @@ public class GetRequest01 {
 
     @Test
     public void test01(){
-
+     //url burda olmasi pek tercih edilmez bu yuzden baseurl olusturp oraya atadik
        String url="https://restful-booker.herokuapp.com/booking";
         Response response=given().when().get(url);
          //response.prettyPrint(); url sonuna 2 yazdik tum bilgiler icin bunu yazdik

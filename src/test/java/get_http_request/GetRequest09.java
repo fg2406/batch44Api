@@ -21,7 +21,7 @@ http://dummy.restapiexample.com/api/v1/employee/12 URL'E GiT.
     @Test
     public  void  test09(){
 
-       spec02.pathParams("birinci","api","ikinci","v1","ucuncu","employee","dorduncu","12");
+       spec02.pathParams("birinci", "restApi","ikinci","v1","ucuncu","employee","dorduncu","12");
 
         //http://dummy.restapiexample.com
         Response response = given().spec(spec02).when().get("/{birinci}/{ikinci}/{ucuncu}/{dorduncu}");

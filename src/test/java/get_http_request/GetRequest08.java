@@ -21,7 +21,7 @@ public class GetRequest08 extends DummyBaseUrl {
     @Test
     public  void  test08(){
 
-      spec02.pathParams("first","api","second","v1","third","employees");
+      spec02.pathParams("first", "restApi","second","v1","third","employees");
 
         Response response = given().spec(spec02).when().get("/{first}/{second}/{third}");
         // "/{first}/{second}/{third}"  == > /api/v1/employees
