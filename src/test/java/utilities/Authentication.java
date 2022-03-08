@@ -33,7 +33,7 @@ public class Authentication {
         return token.getString("id_token");
     }
 }
-     //hocam inceledigimiz bilgiler herkese acik degil,
+
 // sadece kullanici adi ve sifre ile giris yapip inceleyebiliyorsunuz,
 // Authentication classi username ve password ile siteye giris yapip guncel token degerini aliyor,
 // yani siteye giris yaptigimiza dair 24 saat gecerli bi dogrualama kodu gibi birsey. (edited)
