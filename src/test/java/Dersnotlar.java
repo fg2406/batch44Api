@@ -19,13 +19,16 @@ public class Dersnotlar {
     assertThat() Hard assertion'dır.
 
             6) API Testlerinde response doğrulma nasıl yapılır?
+            iki dogrulama var,headers ve body kismi,headers response.that ile baslar bu yontemle yapariz
+            ama body asagidaki yontemlerle olur
     a) TestNG ve JUnit Assert'leri kullanılarak
     b) assertThat()
     c) Json Path
     d) Matchers Class
-    e)
-    f)
-    g)
+    e)De-serialization
+    HashMap<String,Object> actualData=response.as(HashMap.class)
+    f)JSON Object
+    g)Json Path ->JsonPath() json=new
     h)
 
   */

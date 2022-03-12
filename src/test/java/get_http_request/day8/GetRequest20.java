@@ -1,7 +1,7 @@
 package get_http_request.day8;
 
 
-import base_url.JsonPlaceHolderBaseUrl;
+import base_url.JsonPlaceHolderUrl;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Assert;
@@ -12,7 +12,7 @@ import java.util.HashMap;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 
-public class GetRequest20 extends JsonPlaceHolderBaseUrl {
+public class GetRequest20 extends JsonPlaceHolderUrl {
     /*
    https://jsonplaceholder.typicode.com/todos/2
    1) Status kodunun 200,
